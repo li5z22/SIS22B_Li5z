@@ -1,0 +1,111 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: Arial;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+}
+
+/*ESTILOS GENERALES*/
+nav ul {
+	list-style: none;
+	padding: 4;
+}
+
+nav li {
+	line-height: 3rem;
+	position: relative;
+}
+
+nav li ul {
+	position: absolute;
+}
+nav a {
+	color: #ddd;
+	display: block;
+	padding: 0 1.5em;
+	text-decoration: none;
+	transition: .4s;
+}
+
+nav a:hover {
+	background: rgba(0,0,0,.5);
+}
+
+nav li ul {
+	display: none;
+}
+
+
+nav li:hover  > ul {
+	display: block;
+}
+
+
+/*PRIMER NIVEL*/
+
+
+.menu {
+	margin-top: 5px;
+	background: #333;
+	display: table;
+	display: table;
+	width: 60.7%;
+	margin-left: 3.7cm;
+	}
+
+	nav > ul > li {
+		float: left;
+	}
+
+/*SEGUNDO NIVEL*/
+
+nav li li  {
+background: #222;
+overflow: hidden;
+transition: all.4s;
+width: 250px;
+}
+
+nav li:hover > ul > li {
+	max-height: 500px;
+	overflow: visible;
+}
+
+/*TERCER NIVEL*/
+nav ul ul ul {
+	left: 100%;
+	top: 0;
+}
+
+#contenido {
+	width: 100%;
+	height: 50vh;
+	background-color: rgba(0,0,0,0.1);
+	position: relative;
+}
+
+#contenido h3 {
+	height: 200px;
+	line-height: 200px;
+	text-align: center;
+	font-size: 50px;
+	top: 200px;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    color: #D4D4D4;
+}
+
+
+#contenido1 h3 {
+	background-color: rgba(0,0,0,0.5);
+color: #D4D4D4;
+}
+
+
